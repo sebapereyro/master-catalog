@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
   res.send({ hi: 'there' });
 });
 
+app.get('/another', (req, res) => {
+  res.send({ hi: 'other guy' });
+});
+
 //read PORT env variable
 const PORT = process.env.PORT || 5000;
 app.listen(PORT);

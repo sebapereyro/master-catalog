@@ -47,4 +47,7 @@
 
 ## Heroku Deployment
 
-\*
+* create remote called heroku to the git repo on Heroku
+* push the code to heroku
+  * git push heroku master
+    Note: It could happen that it fails the problem is that we need to have the package.json in the root folder
