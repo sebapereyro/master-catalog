@@ -30,7 +30,7 @@
 
 * app get req res
 
-## Heroku Checklist
+## Pre-deploy Heroku Checklist
 
 * It is very happy provider and we can get it going for free and easy
 * Dynamic port binding
@@ -39,3 +39,12 @@
 * specify start script
   * see scripts start script, this is for heroku
 * create .gitignore file, heroku does not need dependencies
+
+## Deploy to Heroku
+
+* Create a Heroku account
+* Installing heroku cli
+
+## Heroku Deployment
+
+\*
