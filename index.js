@@ -1,7 +1,7 @@
 const express = require('express'); // common js module instead of ES2015 modules
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const keys = require('./config/keys');
+const keys = process.env.ENV != 'prod' ? require('./config/keys') : null;
 const app = express(); // we can have multiple express apps. but the vast majority is only one
 
 const googleProps = {
