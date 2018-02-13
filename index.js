@@ -26,9 +26,7 @@ app.get(
 );
 
 // handle google callback
-app.get('/auth/google/callback', (req, res) => {
-  res.send({ hi: 'oh you want to login into Google' });
-});
+app.get('/auth/google/callback', passport.authenticate('google'));
 
 //read PORT env variable
 const PORT = process.env.PORT || 5000;
