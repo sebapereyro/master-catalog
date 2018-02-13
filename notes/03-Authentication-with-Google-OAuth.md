@@ -37,3 +37,21 @@ It is a helper library, automatically takes cares of a lot of details on the aut
   * passport strategy (Google, facebook, twitter)
 
 Documentation: http://www.passportjs.org/
+
+## Enabling Google OAuth API
+
+* Sign up on the google api
+
+## Securing API Secrets
+
+* see how we created the config/keys.js
+
+## Google Strategy Options
+
+* googleClientID
+* googleClientSecret
+* google callback url
+
+## Testing OAuth
+
+* configuring passport
