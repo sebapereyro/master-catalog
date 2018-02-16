@@ -54,4 +54,16 @@ Documentation: http://www.passportjs.org/
 
 ## Testing OAuth
 
-* configuring passport
+* Configuring passport
+* Routing for authentication flow
+
+## Authorized Redirect URI's
+
+## OAuth Callbacks
+
+## Access vs Refresh Tokens
+
+* Access Tokens: this is for allowing us to reach out to GoogleStrategy
+* Refresh refreshToken in order to update auth token
+
+#Nodemon setup
