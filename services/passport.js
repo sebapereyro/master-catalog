@@ -1,6 +1,18 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const keys = process.env.ENV != 'prod' ? require('../config/keys') : null;
+const userService = require('./user');
+
+passport.serializeUser((user, done) => {
+  done(null, user.id);
+});
+
+passport.deserializeUser((id, done) => {
+  userService.findById(id).then(user => {
+    console.log(user);
+    done(null, user);
+  });
+});
 
 //configure passport for Google OAuth
 passport.use(
@@ -11,10 +23,10 @@ passport.use(
       callbackURL: '/auth/google/callback'
     },
     (accessToken, refreshToken, profile, done) => {
-      console.log('accessToken', accessToken);
-      console.log('refreshToken', refreshToken);
-      console.log('profile:', profile);
-      console.log('done', done);
+      userService.findOrCreate(profile).then(user => {
+        console.log(user);
+        done(null, user);
+      });
     }
   )
 );

@@ -49,3 +49,18 @@ Note: this is the initial Structure
   * create a database user (different from the app user)
 
 ## Connecting Mongoose to Mongo
+
+* Install Mongoose
+* Wire up mongoose to start using it with MongoDB
+
+## Mongoose Model class
+
+* Mongoose needs to describe all the fields of a model
+
+## Saving model instances
+
+* Creating a models
+
+## Passport callbacks
+
+\*
