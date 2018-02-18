@@ -5,3 +5,10 @@
 * run it with node start
 
 ## Running Client and Server
+
+* Using concurrently package
+* let the server and client be executed on the same console
+
+## Routing configurations
+
+*
