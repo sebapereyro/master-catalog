@@ -1,6 +1,6 @@
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
-const keys = process.env.ENV != 'prod' ? require('../config/keys') : null;
+const keys = require('../config/keys');
 const userService = require('./user');
 
 passport.serializeUser((user, done) => {
