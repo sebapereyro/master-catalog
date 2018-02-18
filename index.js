@@ -3,7 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
-const keys = process.env.ENV != 'prod' ? require('./config/keys') : null;
+const keys = require('./config/keys');
 require('./models/user.js');
 //const passportConfig = require('./services/passport');
 require('./services/passport');
