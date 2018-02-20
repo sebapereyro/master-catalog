@@ -11,4 +11,6 @@
 
 ## Routing configurations
 
-*
+## The Beauty of Create react App's Proxy
+
+\*
