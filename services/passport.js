@@ -7,26 +7,24 @@ passport.serializeUser((user, done) => {
   done(null, user.id);
 });
 
-passport.deserializeUser((id, done) => {
-  userService.findById(id).then(user => {
-    console.log(user);
-    done(null, user);
-  });
+passport.deserializeUser(async (id, done) => {
+  const user = userService.findById(id);
+  console.log(user);
+  done(null, user);
 });
 
 //configure passport for Google OAuth
 passport.use(
   new GoogleStrategy(
     {
-      clientID: process.env.GOOGLE_CLIENT_ID || keys.googleClientID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET || keys.googleClientSecret,
+      clientID: keys.googleClientID,
+      clientSecret: keys.googleClientSecret,
       callbackURL: '/auth/google/callback'
     },
-    (accessToken, refreshToken, profile, done) => {
-      userService.findOrCreate(profile).then(user => {
-        console.log(user);
-        done(null, user);
-      });
+    async (accessToken, refreshToken, profile, done) => {
+      const user = await userService.findOrCreate(profile);
+      console.log(user);
+      done(null, user);
     }
   )
 );

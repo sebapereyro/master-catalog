@@ -1,8 +1,10 @@
+// index.js -> Redux and the Root Component
+// This is the data layer of our application
+// In this file we will setup everything about Redux
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const root = document.querySelector('#root');
+ReactDOM.render(<App />, root);
