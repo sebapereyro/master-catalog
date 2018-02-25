@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
   renderContent() {
@@ -23,13 +24,13 @@ class Header extends React.Component {
   }
 
   render() {
-    console.log(this.props);
+    const headerUrl = this.props.auth ? '/packs' : '/';
     return (
       <nav>
         <div className="nav-wrapper">
-          <a href="#" className="left brand-logo" style={divStyle}>
+          <Link to={headerUrl} className="left brand-logo" style={divStyle}>
             Starter App
-          </a>
+          </Link>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
             {this.renderContent()}
           </ul>

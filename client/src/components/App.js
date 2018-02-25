@@ -11,14 +11,14 @@ import * as actions from '../actions';
 
 import Help from './Help';
 import Header from './Header';
-
+import Landing from './Landing';
 // functional component. good for just views
 // const App = () => {
 //   return <div>Hi There is this good or what</div>;
 // };
 
 //dummy components
-const Landing = () => <h2> Landing </h2>;
+
 const Dashboard = () => <h2> Dashboard </h2>;
 const PackList = () => <h2> PackList </h2>;
 const PackNew = () => <h2> PackNew </h2>;
