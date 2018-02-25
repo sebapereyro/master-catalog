@@ -14,6 +14,8 @@ const AppDescriptor = () => {
         <li>React</li>
         <li>React-Router</li>
         <li>Materialize-css</li>
+        <li>Axios</li>
+        <li>Redux-thunk</li>
       </ul>
     </div>
   );

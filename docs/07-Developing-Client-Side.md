@@ -23,3 +23,4 @@
 * creating reducers
 * finishing reducres setup
 * react router setup
+* isntalling axios for http requests

@@ -6,6 +6,8 @@
 //using webpack and babel
 import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import * as actions from '../actions';
 
 import Help from './Help';
 import Header from './Header';
@@ -25,9 +27,13 @@ const PackShow = () => <h2> PackShow </h2>;
 //this is a very nice approach create dummy containers that we will later fill
 
 class App extends React.Component {
+  componentDidMount() {
+    this.props.fetchUser();
+  }
+
   render() {
     return (
-      <div>
+      <div className="container">
         <BrowserRouter>
           <div>
             <Header />
@@ -43,4 +49,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default connect(null, actions)(App);
