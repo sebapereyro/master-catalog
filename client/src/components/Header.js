@@ -26,7 +26,7 @@ class Header extends React.Component {
   render() {
     const headerUrl = this.props.auth ? '/packs' : '/';
     return (
-      <nav>
+      <nav className="blue darken-3">
         <div className="nav-wrapper">
           <Link to={headerUrl} className="left brand-logo" style={divStyle}>
             Starter App

@@ -33,15 +33,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <BrowserRouter>
           <div>
             <Header />
-            <Route exact path="/" component={Landing} />
-            <Route exact path="/dashboard" component={Dashboard} />
-            <Route exact path="/packs" component={PackList} />
-            <Route exact path="/packs/new" component={PackNew} />
-            <Route exact path="/help" component={Help} />
+            <div className="container">
+              <Route exact path="/" component={Landing} />
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/packs" component={PackList} />
+              <Route exact path="/packs/new" component={PackNew} />
+              <Route exact path="/help" component={Help} />
+            </div>
           </div>
         </BrowserRouter>
       </div>
