@@ -19,3 +19,7 @@
 * reducers updates state in store
 
 ## Configuring Redux
+
+* creating reducers
+* finishing reducres setup
+* react router setup
