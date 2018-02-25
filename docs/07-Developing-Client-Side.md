@@ -10,3 +10,12 @@
 * configure React stuff
 * installing core modules:
   redux, react-redux, react-router-dom
+
+## Redux flow
+
+* React components call a action creator
+* action creator returns an action
+* the actions sends to reducers
+* reducers updates state in store
+
+## Configuring Redux

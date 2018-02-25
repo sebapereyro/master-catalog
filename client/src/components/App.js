@@ -1,7 +1,7 @@
 // Rendering layer of the application
 // Routing (React Router)
 // Name strategy is it is exporting a class or a component will be Capital
-// othewise if we jsut export functions will be lowercase
+// othewise if we just export functions will be lowercase
 
 //using webpack and babel
 import React from 'react';
@@ -12,7 +12,7 @@ import React from 'react';
 
 class App extends React.Component {
   render() {
-    return <div>This React thinggy is awesome!</div>;
+    return <h1>This React thinggy is awesome!</h1>;
   }
 }
 
