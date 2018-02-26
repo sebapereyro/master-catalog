@@ -5,6 +5,7 @@ const Landing = () => {
     <div style={{ textAlign: 'center' }}>
       <h1> Starter App </h1>
       <p>Lets do this!</p>
+      <a href="/help"> Check Details </a>
     </div>
   );
 };
