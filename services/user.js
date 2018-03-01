@@ -11,10 +11,10 @@ exports.findById = async id => {
 exports.findOrCreate = async profile => {
   console.log('Executing: findOrCreate(profile)');
   console.log('Profile id: ', profile.id);
-  var user = User.findOne({ googleId: profile.id });
+  var user = await User.findOne({ googleId: profile.id });
 
   if (user) {
-    console.log('Existing user, returning it');
+    console.log('Existing user, returning it: ' + user);
     return user;
   }
 

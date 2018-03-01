@@ -13,3 +13,7 @@ https://docs.google.com/document/d/1ZVLphlOH0PEOUCd5v2UJVHiRSKuYjJI-AS4xQWYXmq8/
 node index.js // this is the simple approach
 
 npm run dev // this is after installing nodemon
+
+# deploy the build
+
+npm run build
