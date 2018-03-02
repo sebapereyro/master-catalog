@@ -17,3 +17,6 @@ npm run dev // this is after installing nodemon
 # deploy the build
 
 npm run build
+
+
+# This project can be used as a starting point for bootstraping any Javascript based project.
